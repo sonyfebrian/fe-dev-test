@@ -63,7 +63,7 @@ export function CollapsibleTreeView() {
       <SearchBar onSearch={handleSearch} />
       <div className="mt-4 flex">
         <div className="w-1/2 pr-2">
-          <h2 className="text-xl font-semibold mb-2">Left List</h2>
+         
           {Object.entries(groupedLeftData).map(([firstName, users]) => (
             <UserGroup
               key={firstName}
@@ -74,7 +74,7 @@ export function CollapsibleTreeView() {
           ))}
         </div>
         <div className="w-1/2 pl-2">
-          <h2 className="text-xl font-semibold mb-2">Right List</h2>
+         
           {Object.entries(groupedRightData).map(([firstName, users]) => (
             <UserGroup
               key={firstName}
